@@ -21,9 +21,6 @@ using Windows.UI.ViewManagement;
 using Windows.Foundation;
 using Windows.Storage;
 
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Analytics;
-using Microsoft.AppCenter.Crashes;
 using Microsoft.Extensions.DependencyInjection;
 
 using Inventory.Views;
@@ -38,8 +35,8 @@ namespace Inventory
 
         static public async Task ConfigureAsync()
         {
-            AppCenter.Start("7b48b5c7-768f-49e3-a2e4-7293abe8b0ca", typeof(Analytics), typeof(Crashes));
-            Analytics.TrackEvent("AppStarted");
+            //AppCenter.Start("7b48b5c7-768f-49e3-a2e4-7293abe8b0ca", typeof(Analytics), typeof(Crashes));
+            //Analytics.TrackEvent("AppStarted");
 
             ServiceLocator.Configure(_serviceCollection);
 

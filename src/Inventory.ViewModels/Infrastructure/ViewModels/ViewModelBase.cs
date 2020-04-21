@@ -81,12 +81,12 @@ namespace Inventory.ViewModels
         }
         public void StatusMessage(string message)
         {
-            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(message);
+            //Microsoft.AppCenter.Analytics.Analytics.TrackEvent(message);
             MessageService.Send(this, "StatusMessage", message);
         }
         public void StatusError(string message)
         {
-            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(message);
+            //Microsoft.AppCenter.Analytics.Analytics.TrackEvent(message);
             MessageService.Send(this, "StatusError", message);
         }
 
